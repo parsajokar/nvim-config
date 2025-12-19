@@ -4,12 +4,12 @@ local cmd = vim.cmd
 return {
     -- COLORSCHEME
     {
-        "EdenEast/nightfox.nvim",
+        "datsfilipe/vesper.nvim",
         lazy = false,
         priority = 1000,
 
         config = function()
-            cmd.colorscheme("terafox")
+            cmd.colorscheme("vesper")
         end
     },
 
