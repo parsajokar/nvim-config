@@ -1,2 +1,22 @@
-# This is my Neovim config. (self explanatory)
-## DISCLAIMER: I'm not a Neovim god or anything, so don't expect anything to be perfect. This is just the way I use Neovim.
+# Neovim Configuration by Parsa Jokar
+
+> ⚠️ Disclaimer: I’m not a Neovim guru. This is just how I use Neovim personally. It works for me, but may need adjustments for your setup.
+
+## Requirements
+
+- fd
+- ripgrep
+
+## Installation
+
+Clone this repository into your Neovim configuration directory:
+
+```bash
+git clone https://github.com/parsajokar/nvim-config ~/.config/nvim
+```
+
+Make sure to run this to see if everything is running properly:
+
+```vim
+:checkhealth
+```
