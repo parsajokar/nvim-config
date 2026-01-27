@@ -1,6 +1,4 @@
 require("settings")
-require("keybinds")
-require("autocmd")
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -19,3 +17,7 @@ require("lazy").setup(
     {import = "plugins"},
     {change_detection = {notify = false}}
 )
+
+require("usercmd")
+require("autocmd")
+require("keybinds")

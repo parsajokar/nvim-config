@@ -1,86 +1,83 @@
-local g = vim.g
-local o = vim.opt
-
 -- leader key
-g.mapleader = " "
+vim.g.mapleader = " "
 
 -- assembly syntax
-g.asmsyntax = "fasm"
+vim.g.asmsyntax = "fasm"
 
 -- Doesn"t show --INSERT-- and --VISUAL--
--- o.showmode = false
+-- vim.opt.showmode = false
 
 -- Theme
-o.termguicolors = true
-o.background = "dark" -- or "light" for light mode
+vim.opt.termguicolors = true
+vim.opt.background = "dark" -- or "light" for light mode
 
 -- Disable Netrw
-g.loaded_netrw = 1
-g.loaded_netrwPlugin = 1
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
 -- Do not save when switching buffers
--- o.hidden = true
+-- vim.opt.hidden = true
 
 -- Decrease update time
-o.timeoutlen = 500
-o.updatetime = 200
+vim.opt.timeoutlen = 500
+vim.opt.updatetime = 200
 
 -- Number of screen lines to keep above and below the cursor
-o.scrolloff = 8
+vim.opt.scrolloff = 8
 
 -- Better editor UI
-o.number = true
-o.relativenumber = true
-o.signcolumn = "yes:1"
-o.cursorline = true
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.signcolumn = "yes:1"
+vim.opt.cursorline = true
 
 -- Better editing experience
-o.smartindent = true
-o.tabstop = 4
-o.softtabstop = 4
-o.shiftwidth = 4
-o.expandtab = true
-o.list = true
-o.listchars = "trail:·,nbsp:◇,tab:→ ,extends:▸,precedes:◂"
+vim.opt.smartindent = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.list = true
+vim.opt.listchars = "trail:·,nbsp:◇,tab:→ ,extends:▸,precedes:◂"
 
 -- Makes neovim and host OS clipboard play nicely with each other
-o.clipboard = "unnamedplus"
+vim.opt.clipboard = "unnamedplus"
 
 -- Case insensitive searching UNLESS /C or capital in search
-o.ignorecase = true
-o.smartcase = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 -- Undo and backup options
-o.backup = false
-o.writebackup = false
-o.undofile = true
-o.swapfile = false
--- o.backupdir = "/tmp/"
--- o.directory = "/tmp/"
--- o.undodir = "/tmp/"
+vim.opt.backup = false
+vim.opt.writebackup = false
+vim.opt.undofile = true
+vim.opt.swapfile = false
+-- vim.opt.backupdir = "/tmp/"
+-- vim.opt.directory = "/tmp/"
+-- vim.opt.undodir = "/tmp/"
 
 -- Remember 50 items in commandline history
-o.history = 50
+vim.opt.history = 50
 
 -- Better buffer splitting
-o.splitright = true
-o.splitbelow = true
+vim.opt.splitright = true
+vim.opt.splitbelow = true
 
 -- Preserve view while jumping
-o.jumpoptions = "view"
+vim.opt.jumpoptions = "view"
 
 -- Stable buffer content on window open/close events.
-o.splitkeep = "screen"
+vim.opt.splitkeep = "screen"
 
 -- LF or CRLF
-o.fileformats = "unix,dos"
+vim.opt.fileformats = "unix,dos"
 
 -- C/C++
-o.cinoptions = { "Ls", "g0", ":0", "N-s", "E-s", "(s", "m1" }
+vim.opt.cinoptions = { "Ls", "g0", ":0", "N-s", "E-s", "(s", "m1" }
 
 -- Remove bottom search result count
--- o.shortmess:append("S")
+-- vim.opt.shortmess:append("S")
 
 -- Spell Checker
--- o.spell = true
--- o.spelllang = "en_us"
+-- vim.opt.spell = true
+-- vim.opt.spelllang = "en_us"

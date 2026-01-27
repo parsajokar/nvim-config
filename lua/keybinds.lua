@@ -2,12 +2,14 @@ local function map(m, k, v)
     vim.keymap.set(m, k, v, {silent = true})
 end
 
-map("n", "<Leader>gf", "<CMD>Telescope find_files<CR>") -- GO TO FILE
-map("n", "<Leader>gs", "<CMD>Telescope live_grep<CR>") -- GO TO SYMBOL
-map("n", "<Leader>gb", "<CMD>Telescope buffers<CR>") -- GO TO BUFFER
+local telescope_builtin = require("telescope.builtin")
 
-map("n", "<Leader>ge", "<CMD>Telescope diagnostics<CR>") -- GO TO ERRORS
-map("n", "<Leader>gd", "<CMD>lua vim.lsp.buf.definition()<CR>") -- GO TO DEFINITION
+map("n", "<Leader>gf", telescope_builtin.find_files) -- GO TO FILE
+map("n", "<Leader>gs", telescope_builtin.live_grep) -- GO TO SYMBOL
+map("n", "<Leader>gb", telescope_builtin.buffers) -- GO TO BUFFER
+
+map("n", "<Leader>ge", telescope_builtin.diagnostics) -- GO TO ERRORS
+map("n", "<Leader>gd", vim.lsp.buf.definition) -- GO TO DEFINITION
 
 map("n", "<C-n>", "<CMD>noh<CR>")
 
