@@ -12,7 +12,7 @@
 Clone this repository into your Neovim configuration directory:
 
 ```bash
-git clone https://github.com/parsajokar/nvim-config ~/.config/nvim
+git clone https://github.com/parsajokar/config.nvim ~/.config/nvim
 ```
 
 Make sure to run this to see if everything is running properly:
