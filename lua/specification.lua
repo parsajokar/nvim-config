@@ -1,4 +1,6 @@
 return {
+    transparent_mode = true,
+
     syntax_highlighting = {
         "asm",
         "c",
