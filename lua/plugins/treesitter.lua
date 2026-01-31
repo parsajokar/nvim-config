@@ -9,7 +9,7 @@ return {
         },
 
         config = function()
-            require("nvim-treesitter").install(require("specification").syntax_highlighting)
+            require("nvim-treesitter").install(require("specification").treesitter_list)
         end
     }
 }

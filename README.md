@@ -2,10 +2,14 @@
 
 > ⚠️ Disclaimer: I’m not a Neovim guru. This is just how I use Neovim personally. It works for me, but may need adjustments for your setup.
 
+![Screenshot](image/screenshot.png)
+
 ## Requirements
 
+- fzf
 - fd
 - ripgrep
+- tree-sitter-cli
 
 ## Installation
 

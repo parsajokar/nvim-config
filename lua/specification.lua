@@ -1,7 +1,7 @@
 return {
     transparent_mode = true,
 
-    syntax_highlighting = {
+    treesitter_list = {
         "asm",
         "c",
         "cmake",
